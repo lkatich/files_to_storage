@@ -1,6 +1,6 @@
 FROM python:3.10
 
-RUN bash -c 'mkdir -pv /home/app/{files_to_storage,files,logs,storage}'
+RUN bash -c 'mkdir -pv /home/app/{files_to_storage,files,log,storage}'
 
 COPY files_to_storage /home/app/files_to_storage
 COPY README.md setup.py /home/app/
