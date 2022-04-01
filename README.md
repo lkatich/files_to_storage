@@ -18,7 +18,8 @@ To change the period of files checking - go to the conf/config.yml
 To change the logs visualization, for example - remove from console - go to the conf/log_config.yml and update the handlers to be only "debug_handler"
 
 
-To generate test files you may use files_generator script. Run files_generator.py --help to check the usage 
+To generate test files you may use files_generator script. Run files_generator.py --help to check the usage. 
+Set the required -wd parameter as the path to the newly created "files" folder 
 
 ```bash
 ./files_generator.py 
@@ -34,5 +35,5 @@ options:
 
 ```
 
-By default - the generator puts new files to the "../files" directory (previously created via run.sh script).
+
 
