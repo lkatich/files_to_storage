@@ -1,8 +1,7 @@
-#!/usr/local/bin/python3.10
+#!/usr/local/bin/python3
 
 import argparse
 import time
-from pathlib import Path
 from random import randint
 
 parser = argparse.ArgumentParser()

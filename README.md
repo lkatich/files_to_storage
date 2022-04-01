@@ -34,6 +34,5 @@ options:
 
 ```
 
-If no changes made to the service config, workdir (wd) parameter is to be "files" forder (which will be automatically created when you call run.sh)
-
+By default - the generator puts new files to the "../files" directory (previously created via run.sh script).
 

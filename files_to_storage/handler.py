@@ -3,15 +3,16 @@ import os
 import time
 import traceback
 from concurrent.futures import ThreadPoolExecutor, Future
+from logging.config import dictConfig
 from pathlib import Path
 from threading import RLock
-from logging.config import dictConfig
+
 import yaml
 
 from exceptions import HandlerError
 from mixins import LogMixin
-from storage_operations import UserDataSet, FileDataSaver
 from reader import FileReader
+from storage_operations import UserDataSet, FileDataSaver
 
 WD = Path(__file__).parent
 

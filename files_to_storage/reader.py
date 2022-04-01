@@ -2,9 +2,11 @@ import collections
 import re
 import time
 from typing import DefaultDict
-from mixins import LogMixin
+
 import psutil
 import yaml
+
+from mixins import LogMixin
 
 
 class FileReader(LogMixin):

@@ -1,9 +1,10 @@
 import collections
 import json
-from json import JSONDecodeError
 import os
 from abc import ABC, abstractmethod
+from json import JSONDecodeError
 from typing import NamedTuple
+
 from exceptions import HandlerError
 from mixins import LogMixin
 
