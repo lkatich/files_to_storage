@@ -1,0 +1,29 @@
+version: 1
+disable_existing_loggers: false
+
+handlers:
+    console_handler:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter: default_formatter
+        stream: ext://sys.stdout
+    debug_handler:
+        class: logging.FileHandler
+        level: DEBUG
+        formatter: default_formatter
+        filename: log/handler.log
+
+formatters:
+    default_formatter:
+        format: '{asctime} {levelname:8s} {name:30s} {message}'
+        style: '{'
+
+loggers:
+    endpoints:
+        level: DEBUG
+        handlers: [console_handler, debug_handler]
+        propagate: no
+
+root:
+    level: DEBUG
+    handlers: [debug_handler, console_handler]
