@@ -1,0 +1,13 @@
+MAX_WORKERS: 10
+FILES_FOLDER_PATH: "files"
+
+PROCESSED_FILES: "storage/processed_files.yml"
+STORAGE_FILE: "storage/data.json"
+
+CHUNK_SIZE: 1024
+
+WATCH_PERIOD: 10
+
+#for files generation
+PERIOD: 10
+LINES: 100
